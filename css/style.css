@@ -6,6 +6,7 @@
 // IMPORTS
 // =======
 */
+@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500&display=swap");
 /*
 // RESET
 // =====
@@ -22,14 +23,110 @@
 // ==========
 */
 body {
-  font-family: sans-serif;
+  font-family: 'Rubik', sans-serif;
+  color: white;
+}
+
+.user-info p {
+  font-size: 14px;
+  color: #bdc1ff;
+}
+
+.user-info h1 {
+  font-size: 24px;
+  font-weight: 300;
+}
+
+.nav {
+  color: #6f76c8;
 }
 
 /*
 // LAYOUT
 // ======
 */
+body {
+  position: relative;
+  background-color: #0f1424;
+}
+
+main {
+  margin: 80px 20px;
+  padding-bottom: 20px;
+}
+
+.card#user {
+  position: relative;
+  z-index: 1;
+}
+
+.profile {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.user-info {
+  margin-left: 15px;
+}
+
+.user-info p {
+  margin-bottom: 10px;
+}
+
+.nav {
+  -webkit-transform: translateY(-30px);
+          transform: translateY(-30px);
+}
+
+footer {
+  position: absolute;
+  bottom: 0px;
+}
+
 /*
 // COMPONENTS
 // ==========
 */
+.card {
+  background-color: #1c1f4a;
+  padding: 30px 25px;
+  border-radius: 15px;
+}
+
+.card#user {
+  background-color: #5847eb;
+}
+
+.nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding-top: 50px;
+}
+
+.nav p {
+  cursor: pointer;
+}
+
+.nav p:hover,
+.nav p.active {
+  color: white;
+}
+
+.user-image {
+  width: 70px;
+  border: 2px solid white;
+  border-radius: 50%;
+}
+
+.user-image img {
+  display: block;
+  width: 100%;
+}
