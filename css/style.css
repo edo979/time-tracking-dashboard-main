@@ -147,7 +147,11 @@ footer {
 }
 
 .card#work::before,
-.card#play::before {
+.card#play::before,
+.card#study::before,
+.card#exercise::before,
+.card#social::before,
+.card#self-care::before {
   position: absolute;
   content: '';
   width: 100%;
@@ -164,6 +168,32 @@ footer {
 .card#work::before {
   background-color: #ff8c66;
   background-image: url("../images/icon-work.svg");
+}
+
+.card#play::before {
+  background-color: #56c2e6;
+  background-image: url("../images/icon-play.svg");
+}
+
+.card#study::before {
+  background-color: #ff5c7c;
+  background-image: url("../images/icon-study.svg");
+}
+
+.card#exercise::before {
+  background-color: #4acf81;
+  background-image: url("../images/icon-exercise.svg");
+  background-position-y: 0px;
+}
+
+.card#social::before {
+  background-color: #7536d3;
+  background-image: url("../images/icon-social.svg");
+}
+
+.card#self-care::before {
+  background-color: #f1c65b;
+  background-image: url("../images/icon-self-care.svg");
 }
 
 .nav {

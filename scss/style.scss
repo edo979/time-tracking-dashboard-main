@@ -159,7 +159,11 @@ footer {
 }
 
 .card#work,
-.card#play {
+.card#play,
+.card#study,
+.card#exercise,
+.card#social,
+.card#self-care {
   &::before {
     position: absolute;
     content: '';
@@ -179,6 +183,37 @@ footer {
   &::before {
     background-color: $Light-red-1;
     background-image: url('../images/icon-work.svg');
+  }
+}
+.card#play {
+  &::before {
+    background-color: $Soft-blue;
+    background-image: url('../images/icon-play.svg');
+  }
+}
+.card#study {
+  &::before {
+    background-color: $Light-red-2;
+    background-image: url('../images/icon-study.svg');
+  }
+}
+.card#exercise {
+  &::before {
+    background-color: $Lime-green;
+    background-image: url('../images/icon-exercise.svg');
+    background-position-y: 0px;
+  }
+}
+.card#social {
+  &::before {
+    background-color: $Violet;
+    background-image: url('../images/icon-social.svg');
+  }
+}
+.card#self-care {
+  &::before {
+    background-color: $Soft-orange;
+    background-image: url('../images/icon-self-care.svg');
   }
 }
 
