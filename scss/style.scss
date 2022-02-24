@@ -65,6 +65,8 @@ body {
 
 .nav {
   color: $Desaturated-blue;
+  font-size: 18px;
+  font-weight: 400;
 }
 
 .card-header {
@@ -75,12 +77,12 @@ body {
 }
 
 .card-data {
+  font-weight: 300;
+
   &-current {
     font-size: 30px;
-    font-weight: 300;
   }
   &-previous {
-    font-weight: 300;
     color: $Pale-Blue;
   }
 }

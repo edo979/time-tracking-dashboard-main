@@ -39,6 +39,8 @@ body {
 
 .nav {
   color: #6f76c8;
+  font-size: 18px;
+  font-weight: 400;
 }
 
 .card-header p {
@@ -46,13 +48,15 @@ body {
   font-weight: 500;
 }
 
-.card-data-current {
-  font-size: 30px;
+.card-data {
   font-weight: 300;
 }
 
+.card-data-current {
+  font-size: 30px;
+}
+
 .card-data-previous {
-  font-weight: 300;
   color: #bdc1ff;
 }
 
