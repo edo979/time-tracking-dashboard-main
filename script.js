@@ -39,7 +39,7 @@ async function showData(timeFrame) {
 
     currentDataEl.innerHTML = activity.timeframes[timeFrame].current + 'hrs'
 
-    previousDataEl.innerHTML = `${timeFrameFormat} - ${activity.previous}hrs`
+    previousDataEl.innerHTML = `${timeFrameFormat} - ${activity.timeframes[timeFrame].previous}hrs`
   })
 }
 
