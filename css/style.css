@@ -220,6 +220,24 @@ footer {
   background-color: #5847eb;
 }
 
+.card#work,
+.card#play,
+.card#study,
+.card#exercise,
+.card#social,
+.card#self-care {
+  cursor: pointer;
+}
+
+.card#work:hover,
+.card#play:hover,
+.card#study:hover,
+.card#exercise:hover,
+.card#social:hover,
+.card#self-care:hover {
+  background-color: #2b3173;
+}
+
 .card#work::before,
 .card#play::before,
 .card#study::before,
@@ -237,6 +255,15 @@ footer {
   background-position-y: -10px;
   background-position-x: calc(100% - 20px);
   z-index: -1;
+}
+
+.card#work.meny-hover:hover,
+.card#play.meny-hover:hover,
+.card#study.meny-hover:hover,
+.card#exercise.meny-hover:hover,
+.card#social.meny-hover:hover,
+.card#self-care.meny-hover:hover {
+  background-color: #1c1f4a;
 }
 
 .card#work::before {

@@ -252,6 +252,12 @@ footer {
 .card#exercise,
 .card#social,
 .card#self-care {
+  cursor: pointer;
+
+  &:hover {
+    background-color: darken($color: $Desaturated-blue, $amount: 30%);
+  }
+
   &::before {
     position: absolute;
     content: '';
@@ -264,6 +270,12 @@ footer {
     background-position-y: -10px;
     background-position-x: calc(100% - 20px);
     z-index: -1;
+  }
+
+  &.meny-hover {
+    &:hover {
+      background-color: $Dark-blue;
+    }
   }
 }
 

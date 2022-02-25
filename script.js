@@ -1,6 +1,7 @@
 const dataElements = document.querySelectorAll('[data-title]'),
   navEl = document.querySelector('.nav'),
-  data = []
+  menyEls = document.querySelectorAll('.card-header img')
+data = []
 
 showData('weekly')
 
@@ -62,3 +63,13 @@ function getTimeFrameMessage(timeFrame) {
       return 'Yesterday'
   }
 }
+
+menyEls.forEach((el) => {
+  el.addEventListener('mouseenter', (e) => {
+    e.target.parentElement.parentElement.classList.add('meny-hover')
+  })
+
+  el.addEventListener('mouseleave', (e) => {
+    e.target.parentElement.parentElement.classList.remove('meny-hover')
+  })
+})
