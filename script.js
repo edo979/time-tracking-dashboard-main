@@ -26,20 +26,19 @@ async function showData(timeFrame) {
     data.push(...(await getData()))
   }
 
-  const timeFrameFormat = getTimeFrameFormat(timeFrame)
+  const timeFrameFormat = getTimeFrameMessage(timeFrame)
 
   dataElements.forEach((el) => {
     const currentDataEl = el.querySelector('.card-data-current'),
       previousDataEl = el.querySelector('.card-data-previous'),
-      dataTitle = el.dataset.title
+      activityTitle = el.dataset.title,
+      activity = data.find(
+        (acitivityData) => acitivityData.title === activityTitle
+      )
 
-    currentDataEl.innerHTML =
-      data.find((d) => d.title === dataTitle).timeframes[timeFrame].current +
-      'hrs'
+    currentDataEl.innerHTML = activity.timeframes[timeFrame].current + 'hrs'
 
-    previousDataEl.innerHTML = `${timeFrameFormat} - ${
-      data.find((d) => d.title === dataTitle).timeframes[timeFrame].previous
-    }hrs`
+    previousDataEl.innerHTML = `${timeFrameFormat} - ${activity.previous}hrs`
   })
 }
 
@@ -50,7 +49,7 @@ async function getData() {
   return data
 }
 
-function getTimeFrameFormat(timeFrame) {
+function getTimeFrameMessage(timeFrame) {
   switch (timeFrame) {
     case 'daily':
       return 'Yesterday'
